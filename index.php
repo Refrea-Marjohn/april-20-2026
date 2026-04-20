@@ -260,13 +260,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             color: white;
             margin-bottom: 1rem;
             font-weight: 700;
+            letter-spacing: 0.01em;
+            line-height: 1.15;
         }
         
         .hero-text p {
-            font-size: 1.2rem;
-            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.08rem;
+            color: rgba(255, 255, 255, 0.94);
             margin-bottom: 2rem;
-            line-height: 1.6;
+            line-height: 1.75;
+            max-width: 690px;
+            font-weight: 400;
         }
         
         .hero-buttons {
@@ -714,6 +718,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             .hero-text h1 {
                 font-size: 2.5rem;
             }
+
+            .hero-text p {
+                font-size: 1rem;
+                line-height: 1.65;
+                max-width: 100%;
+            }
             
             .hero-buttons {
                 justify-content: center;
@@ -747,8 +757,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Financial Support for DepEd Employees</h1>
-                <p>Your trusted partner for educational financial assistance. We provide quick, secure, and transparent loan services designed specifically for Department of Education employees.</p>
+                <h1>DepEd Provident Loan Management System</h1>
+                <p>This official platform of Schools Division Office Cabuyao City provides secure, transparent, and accountable financial assistance services for eligible Department of Education personnel, including loan application processing, status tracking, and balance monitoring.</p>
                 <div class="hero-buttons">
                     <a href="register.php" class="btn-primary">Get Started</a>
                     <a href="#features" class="btn-secondary">Learn More</a>
@@ -897,8 +907,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 
                 <div class="feature-card">
                     <div class="feature-icon">💰</div>
-                    <h3>Competitive Rates</h3>
-                    <p>Enjoy low interest rates and flexible payment terms designed for government employees.</p>
+                    <h3>Responsible Loan Terms</h3>
+                    <p>Benefit from fair interest rates and structured repayment options aligned with the financial capacity of Department of Education personnel.</p>
                 </div>
                 
                 <div class="feature-card">
@@ -933,8 +943,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div style="margin-bottom: 2rem;">
                 <h3 style="margin-bottom: 1rem; color: white;">SDO Cabuyao City.</h3>
                 <p style="max-width: 600px; margin: 0 auto; line-height: 1.6;">
-                    Your trusted financial partner for Department of Education employees. 
-                    Providing fast, secure, and affordable loan services to support the educational community.
+                    Official loan services portal of the Schools Division Office Cabuyao City for
+                    Department of Education personnel, committed to secure processing, transparent
+                    transactions, and responsive client support.
                 </p>
             </div>
             <div style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap;">
@@ -955,9 +966,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
             </div>
             <div style="border-top: 1px solid rgba(255, 255, 255, 0.2); padding-top: 1rem; margin-top: 1rem;">
-                <p>&copy; 2024 DepEd Loan System. All rights reserved. | Department of Education Philippines</p>
+                <p>&copy; <?php echo date('Y'); ?> DepEd Provident Loan Management System | Schools Division Office Cabuyao City</p>
                 <p style="font-size: 0.85rem; opacity: 0.8; margin-top: 0.5rem;">
-                    SEC Registered | BSP Accredited | Data Privacy Compliant
+                    In accordance with DepEd policies and applicable government regulations | Data Privacy Act of 2012 (RA 10173) Compliant
                 </p>
             </div>
         </div>
